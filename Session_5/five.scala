@@ -6,7 +6,7 @@ object five{
     }
 
     def main(args: Array[String]): Unit = {
-        println(evensum(6))
+        println(evensum(15))
 
     }
 }

@@ -34,10 +34,10 @@ object caesar{
     
     def main(args: Array[String]): Unit = {
         val s = "HELLO, world"
-        val shift = 3
-        val result = cipher(s, shift)(caesar)
+        val shift =3
+        val result = cipher(s, shift%26)(caesar)
         println(result)
-        val unresult = cipher(result, shift)(uncaesar)
+        val unresult = cipher(result, shift%26)(uncaesar)
         println(unresult)
 
     }
